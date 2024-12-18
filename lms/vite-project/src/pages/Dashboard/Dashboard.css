@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --Primary: #00B7EB;
+    --White: #FFFF;
+    --secondary: #006DB0;
+    --Black500: #28393E;
+    --Black400: #5C686C;
+    --Black300: #8F979A;
+    --Black200: #C3C7C8;
+    --Black100: #E1E3E4;
+    --Black50: #ECEDED;
+    --Error: #E21B27;
+}
+
+.rightSide {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.rightSide .section1 {
+    margin-bottom: 2rem;
+}
+
+.rightSide .section1 .main_heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--Black500);
+    margin-bottom: 1rem;
+}
+
+.rightSide .section1 hr {
+    width: 100%;
+    border: 1px solid var(--Black100);
+}
+
+.rightSide .section1 .progress_divs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 1.5rem;
+}
+
+.progress_divs div {
+    background: var(--White);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-block: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.progress_divs div h1 {
+    font-weight: 500;
+    color: var(--Black500);
+    font-size: 2rem;
+}
+
+.progress_divs div h5 {
+    font-weight: 400;
+    color: var(--Black300);
+    margin-top: 0.5rem;
+}
+
+.rightSide .section2 .container {
+    padding: 1.5rem;
+    background: var(--White);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.rightSide .section2 .container .progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.rightSide .section2 .container .totalProgress {
+    width: 80%;
+    height: 16px;
+    background: var(--Primary);
+    border-radius: 8px;
+}
+
+.rightSide .section2 .container .progressValues h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.rightSide .section2 .container .rect {
+    width: 100%;
+    height: 16px;
+    background: var(--Primary);
+    border-radius: 8px;
+}
+
+.rightSide .section2 .container .r2 {
+    opacity: 70%;
+    width: 69%;
+}
+
+.rightSide .section2 .container .r3 {
+    opacity: 40%;
+    width: 60%;
+}
+
+.rightSide .section2 .container .r4 {
+    opacity: 10%;
+    width: 12%;
+}
+
+.rightSide .section2 .container .value {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--Black500);
+}
+
+.rightSide .section2 .container .sec_mainHeading {
+    font-size: 1.7rem;
+    margin-block: 1.2rem;
+    color: var(--Black500);
+}
+
+.rightSide .section2 .container .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 1rem;
+}
+
+.rightSide .section3 .container {
+    padding: 1.5rem;
+    background: var(--White);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.rightSide .section3 .container h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.rightSide .section3 .container h5 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--Black500);
+    margin-block: 0.5rem;
+}
+
+.rightSide .section3 .container option {
+    display: list-item;
+    list-style-type: disc;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+    color: var(--Black500);
+}
+
+.rightSide .section3 .container option:hover {
+    color: var(--Primary);
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .rightSide {
+        width: 100%;
+    }
+
+    .rightSide .section1 .progress_divs {
+        grid-template-columns: 1fr;
+    }
+
+    .rightSide .section1 .main_heading {
+        font-size: 2rem;
+    }
+
+    .rightSide .section2 .container {
+        padding: 1rem;
+    }
+
+    .rightSide .section2 .container .totalProgress {
+        height: 12px;
+    }
+
+    .rightSide .section3 .container h3 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,237 @@
+:root {
+    --Primary: #00B7EB;
+    --White: #FFFF;
+    --secondary: #006DB0;
+    --Black500: #28393E;
+    --Black400: #5C686C;
+    --Black300: #8F979A;
+    --Black200: #C3C7C8;
+    --Black100: #E1E3E4;
+    --Black50: #ECEDED;
+    --Error: #E21B27;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.main {
+    display: flex;
+}
+
+.sideBar {
+    width: 84px;
+    border: 0.1rem solid var(--Black400);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background: var(--secondary);
+    scroll-behavior: smooth;
+    transition: ease-out 0.5s;
+    height: 110vh;
+}
+
+
+
+.display_none {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    padding: 1rem 1.2rem;
+    position: absolute;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    width: 50%;
+}
+
+.logo_img {
+    margin-left: 1.5rem;
+}
+
+.logo .logo_heading {
+    margin: 0.5rem 0 0.2rem 0.5rem;
+    line-height: 0.9;
+}
+
+.logo .logo_heading .main_heading {
+    font-size: 1.2rem;
+}
+
+.logo .logo_heading .sub_heading {
+    font-weight: 300;
+    word-spacing: 0.3rem;
+    font-size: 0.8rem;
+}
+
+.sideBar_ham_width {
+    height: 110vh;
+    width: 600px;
+}
+
+.black_heading {
+    color: var(--Black400);
+}
+
+.white_heading {
+    color: var(--White);
+}
+
+.no_border {
+    border: none !important;
+}
+
+.padding_op {
+    padding: 4rem 1.5rem;
+    color: var(--White);
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.options {
+    padding: 1.9rem 0rem 16.2rem 0rem;
+    color: var(--White);
+    margin-top: 2rem;
+}
+
+.options .option {
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: all .3s ease;
+}
+
+.options .option:hover {
+    background: var(--Primary);
+    color: var(--Black500);
+}
+
+.options .option img {
+    width: 19px;
+    height: 19px;
+}
+
+.option a {
+    text-decoration: none;
+    color: white;
+}
+
+.options .option h3 {
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+.user {
+    display: flex;
+    padding: 1rem 1.6rem;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+}
+
+.user .img_div {
+    background: var(--White);
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+}
+
+.user_headings {
+    color: var(--White);
+    margin-top: 0.6rem;
+    margin: 0.3rem 0.9rem 0rem 0.5rem;
+}
+ .img_div img {
+
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+}
+.user_headings h2 {
+
+    font-weight: 500;
+}
+
+.user_headings h4 {
+    font-weight: 300;
+}
+
+.icon {
+    margin-top: 1rem;
+}
+
+.hamburger_menu {
+    margin-left: 1rem;
+}
+
+.hamburger_menu span {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: var(--White);
+    cursor: pointer;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%) translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+.opt_heading {
+    transition: opacity 1.2s ease-out;
+    opacity: 0;
+}
+
+.options .option .opt_heading {
+    animation: slideIn 1.2s forwards;
+    opacity: 1;
+}
+
+.user {
+    animation: slideIn 0.5s forwards;
+    opacity: 1;
+}
+
+
+.dropdown-menu {
+    position: absolute;
+    top: 53px; 
+    right: -50px; 
+    background-color: var(--White);
+    border: 1px solid var(--Black300);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    display: none; 
+    height: 200px;
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    color: var(--Black500);
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--Primary);
+    color: var(--White);
+}

@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.announcement-container{
+    
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.announcement-container .announcement-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid white;
+    border-radius: 5px ;
+    box-shadow: 0 4px 24px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    padding-bottom: 50px;
+}
+.announcement-container .announcement-inputs input{
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 10px;
+    padding: 15px;
+    width: 70%;
+}
+.announcement-container .announcement-inputs .input2{
+    height: 250px;
+    top: 0;
+    border-radius: 10px;
+    padding: 15px;
+    width: 70%;
+}
+
+.announcement-container .post-btn{
+    text-align: right;
+}
+
+.announcement-container .post-btn button{
+    width: 15%;
+    padding: 8px;
+    border: 1px solid rgb(7, 144, 207);
+    background: rgb(7, 144, 207);
+    color: white;
+    border-radius: 5px;
+}

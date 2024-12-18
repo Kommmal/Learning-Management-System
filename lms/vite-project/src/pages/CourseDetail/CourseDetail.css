@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.course-detail {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .chapter-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background: #fff;
+  }
+  
+  .chapter-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .day-item{
+    margin: 5px 0;
+  }
+  .chapter-number {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .chapter-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .topic-tag {
+    background: #e6e6e6;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 16px;
+  }
+  
+  .status-btn {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-weight: bold;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .status-btn.done {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .status-btn.mark-as-done {
+    background-color: #e0e0e0;
+    color: #555;
+  }
+  

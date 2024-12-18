@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.allcourses{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+
+.allcourses-container{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.allcourses-right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 65%;
+
+    padding: 20px 10px;   
+   
+}
+
+.allcourses-right .allcourses-right-top{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.allcourse-video-left{
+    width: 30%;
+    height: 100%;
+
+    border-radius: 10px;
+}
+.course-video-left img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.technical-support{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.allcourses-left{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.allcourses-left .allcourses-left-top{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.allcourses-left .search{
+    width: 100%; 
+    position: relative;
+}
+.allcourses-left-top .search input{
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.allcourses-left-top .search .icon{
+    position: absolute;
+    top: -20%;
+    right: 3%
+}
+.allcourses-left-top .filter{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.allcourses-left-top .sort{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.allcourses-left-top .filter>:first-child{
+    color: grey;
+}
+.allcourses-left-top .sort>:first-child{
+    color: grey;
+}

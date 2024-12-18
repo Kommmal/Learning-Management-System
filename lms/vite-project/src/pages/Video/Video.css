@@ -1,0 +1,25 @@
+.video{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+   
+}
+.video-player-container{
+    display: flex;
+    justify-content: space-between;
+}
+.video p a{
+    text-decoration: none;
+    color: rgb(37, 202, 202);;
+}
+.video p >:last-child { 
+    color: black
+}
+.video-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 30px;
+}

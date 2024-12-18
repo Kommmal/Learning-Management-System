@@ -1,0 +1,64 @@
+.login{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.login-container{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid white;
+    border-radius: 5px ;
+    box-shadow: 0 4px 24px 4px rgba(0,0,0,0.1);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:  20px;
+    gap: 20px;
+}
+.login-container .login-logo{
+    text-align: center;
+
+}
+.login-container .login-inputs{
+    display: flex;
+    flex-direction: column;
+    
+}
+.login-container .login-inputs input{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.login-container .login-heading p{
+
+  color: grey; 
+}
+
+.login-container .login-buttons{
+    width: 100%;
+    text-align: right;
+}
+.login-container .login-buttons .btn1{
+    text-decoration: none;
+    color: red;
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+.login-container .login-buttons .btn2{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #00B7EB;
+    background: #00B7EB;
+    color: white;
+    border-radius: 5px;
+}
+form .signUP{
+    display: flex;
+    justify-content: center;
+}
+.signUP .signup-link{
+    text-decoration: none;
+    color: rgb(65, 174, 225);
+}

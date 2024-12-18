@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.my-course{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    gap: 10px;
+  
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.mycourse-container{
+    
+    display: flex;
+    justify-content: space-around;
+}
+.mycourse-right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 65%;
+
+    padding: 20px 10px;   
+   
+}
+.mycourse-left{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.course-video{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px ;
+    box-shadow: 0 4px 24px 4px rgba(0,0,0,0.1);
+}
+.course-video-right{
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+
+}
+.course-video-left{
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+}
+.course-video-left img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.course-right-p{
+    display: flex;
+    gap: 10px;
+}
+.course-right-p p{
+    border: 1px solid rgb(199, 194, 194);
+    background: rgb(199, 194, 194);
+    border-radius: 20px;
+    padding: 5px 10px;
+
+}
+.course-video-right h3{
+    font-size: 1.5rem;
+}
+.mycourse-left .mycourse-left-top{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.mycourse-left .search{
+    width: 100%; 
+    position: relative;
+}
+.mycourse-left-top .search input{
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.mycourse-left-top .search .icon{
+    position: absolute;
+    top: -20%;
+    right: 3%
+}
+.mycourse-left-top .filter{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.mycourse-left-top .sort{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.mycourse-left-top .filter>:first-child{
+    color: grey;
+}
+.mycourse-left-top .sort>:first-child{
+    color: grey;
+}
+
+.delete-btn button{
+    background: "red";
+    color: "white";
+    border: "none"; 
+    padding: "5px";
+    cursor: "pointer";
+    margin-top: "5px";
+}
+.delete-btn {
+    width: 30%;
+    margin: 0 auto;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 4px;
+  }
+  
+  .delete-btn:hover {
+    background-color: darkred;
+  }
+  
+.announcement-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(173, 173, 173);
+}
